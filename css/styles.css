@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+/* ===== Colours ===== */
+
+body {
+    background-color: whitesmoke;
+    color: rgb(35, 45, 55);
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* ===== Headings ===== */
+
+h1 {
+    color: #173B57;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    color: #173B57;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #805500;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/* ===== Selectors ===== */
+
+/* Element selector */
+p {
+    color: rgb(35, 45, 55);
+}
+
+/* Class selector */
+.tagline {
+    color: #805500;
+    font-style: italic;
+}
+
+/* Cascade check: .tagline wins over p because a class selector has higher specificity than an element selector. */
+
+/* Second class selector */
+.highlight {
+    color: #805500;
+    font-weight: bold;
+}
+
+/* ID selector */
+#about {
+    color: rgb(35, 45, 55);
+}
+
+/* Group selector */
+h1, h2, h3 {
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+
+/* ===== Links and States ===== */
+
+nav a {
+    color: #173B57;
+    text-decoration: none;
+}
+
+/* Mouse hover */
+nav a:hover {
+    color: #805500;
+}
+
+/* Keyboard focus */
+nav a:focus-visible {
+    color: #805500;
+    text-decoration: underline;
+}
+
+
+/* ===== Text Styling ===== */
+
+footer {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Style the first letter of the About paragraph */
+#about p::first-letter {
+    color: #805500;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* ===== Table Styling ===== */
+
+thead {
+    background-color: #173B57;
+    color: whitesmoke;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #805500;
+    color: whitesmoke;
+}
+
+
+/* ===== Form Styling ===== */
+
+label {
+    font-weight: bold;
+}
+
+/* When a user clicks inside an input */
+input:focus {
+    background-color: #173B57;
+    color: whitesmoke;
+}
+
+/* When an input contains an invalid value */
+input:invalid {
+    color: #805500;
+}
